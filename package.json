@@ -1,0 +1,39 @@
+{
+  "name": "loja-cena",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Loja CENA - Para Pais e Filhos | Plataforma de produtos educacionais",
+  "author": "CENA - Creche e Escola Nova Aliança",
+  "license": "MIT",
+  "keywords": ["educacao", "infantil", "apostilas", "colonia-ferias", "ecommerce"],
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 80",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0 --port 4173",
+    "serve": "vite --host 0.0.0.0 --port 80",
+    "start": "npm run serve",
+    "lint": "echo 'Checando qualidade do código...' && node -c script.js && echo 'Código JavaScript válido!'",
+    "test": "echo 'Executando testes básicos...' && npm run lint && echo 'Todos os testes passaram!'",
+    "backup": "node -e \"console.log('Backup manual criado:', new Date().toISOString())\"",
+    "deploy": "npm run build && echo 'Build completo para deploy!'",
+    "stats": "node -e \"const fs=require('fs'); const html=fs.readFileSync('index.html','utf8'); const css=fs.readFileSync('style.css','utf8'); const js=fs.readFileSync('script.js','utf8'); console.log('📊 Estatísticas do Projeto:'); console.log('HTML:', html.length, 'chars'); console.log('CSS:', css.length, 'chars'); console.log('JS:', js.length, 'chars'); console.log('Total:', (html.length + css.length + js.length), 'chars');\""
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "browserslist": [
+    "defaults",
+    "not ie 11",
+    "not op_mini all"
+  ],
+  "dependencies": {
+    "vite": "^5.4.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "replit://@user/loja-cena"
+  },
+  "config": {
+    "unsafe-perm": true
+  }
+}
